@@ -6,6 +6,29 @@ body {
 
 }
 
+/**scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 /** Navbar **/
 
 .topnav {
@@ -173,10 +196,11 @@ padding-right: 20px;}
 width:auto;
 margin-top: 50px;}
 
-#carouselExampleFade {width:100%;
-height:40rem;}
+#carouselExampleFade {width:auto;
+height:auto;}
 
-.c-image {height:40rem;}
+.c-image {height:auto;
+width:auto;}
 
 #carouselExampleControls {
   width: 20%;
@@ -195,8 +219,8 @@ padding-top: 0px;;
   height: auto;
 }
 
-.med-container {padding-left: 1px;
-padding-right:1.5px;
+.med-container {padding-left: 0px;
+padding-right:0px;
 overflow: auto;}
 
 .container {width: 100%;
@@ -206,15 +230,22 @@ max-width: 100%;
 margin-top: 0px;
 padding-left: 50px;
 padding-right: 50px;
-overflow: auto;}
+padding-top: 20px;
+padding-bottom: 20px;
+overflow: auto;
+border: 10px solid #333333;
+border-left: none;
+border-right: none;}
+
+
 
 
 .jumbotron {
   background: #fff;
-  padding-top: 100px;
-}
+  padding-top: 100px;}
 
 .cardcontainer {padding: 0 20px;}
+}
 
 .card{
   margin: 5% 0%;
